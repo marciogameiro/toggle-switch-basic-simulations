@@ -1,0 +1,5 @@
+# Mac OS X files
+.DS_Store
+
+# Matlab temp backup files
+*.m~

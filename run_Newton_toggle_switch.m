@@ -35,8 +35,12 @@ end
 % Compute Jacobian matirx
 J = Dg(x);
 
+% disp(' ')
+% disp(['Jacobina matrix:'])
+
+% disp(J)
+
 disp(' ')
+disp(['Eigenvalues of Jacobina matrix:'])
 
-disp(['Jacobina matrix:'])
-
-disp(J)
+disp(eig(J))

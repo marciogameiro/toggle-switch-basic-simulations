@@ -29,8 +29,8 @@ x1 = x0; % Initialize x1 as the initial point x0
 f_x1 = f(x1);         % Compute f at the initial point
 norm_f1 = norm(f_x1); % Norm of f at the initial point
 
-disp(' ')
-disp(['||f(x)|| = ', num2str(norm(norm_f1))])
+% disp(' ')
+% disp(['||f(x)|| = ', num2str(norm(norm_f1))])
 
 converged = false; % Intialize converged to false
 num_itr = 0;       % Intialize iteration counter
@@ -52,8 +52,8 @@ while ((converged == false) && (num_itr < max_itr))
     converged = true;
   end
 
-  disp(['||f(x)|| = ', num2str(norm(norm_f1))])
-  % disp(['||Df(x)|| = ', num2str(norm(inv(Df(x1, lambda))))])
+  % disp(['||f(x)|| = ', num2str(norm(norm_f1))])
+  % % disp(['||Df(x)|| = ', num2str(norm(inv(Df(x1, lambda))))])
 
   num_itr = num_itr + 1; % Increment iteration counter
 end
